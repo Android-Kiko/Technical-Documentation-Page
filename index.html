@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
+</style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>iOS Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#What_you_should_already_know">History</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#JavaScript_and_Java">Development</a>
+        </li>
+        <li><a class="nav-link" href="#Hello_world">Application</a></li>
+        <li><a class="nav-link" href="#Variables">Hardware</a></li>
+        <li>
+          <a class="nav-link" href="#Declaring_variables">Devices</a>
+        </li>
+        <li><a class="nav-link" href="#Variable_scope">Reception</a></li>
+        <li><a class="nav-link" href="#Global_variables">Features</a></li>
+        <li><a class="nav-link" href="#Constants">Security and privacy</a></li>
+        <li><a class="nav-link" href="#Data_types">Digital rights management</a></li>
+        <li>
+          <a class="nav-link" href="#if...else_statement">Facts</a>
+        </li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            iOS is the operating system for iPhone, iPad and other Apple mobile devices. 
+            Based on Mac OS, the operating system which runs Apple’s line of Mac desktop 
+            and laptop computers, Apple iOS is designed for easy, seamless networking 
+            between Apple products.
+          </p>
+    
+          <p>
+            iOS is the second-most popular mobile computing platform. In September 2017, 
+            Apple iOS held a 32 percent share of the mobile market, second only to 
+            Android which held a 65.5 percent share.
+          </p>
+          <p>
+            The first version of iOS was released in June 2007, when the iPhone debuted 
+            on the market.1 iOS, an acronym for iPhone Operating System, is a Unix-based 
+            operating system powering all of Apple’s mobile devices, but the name iOS 
+            was not officially applied to the software until 2008, when Apple released 
+            the iPhone software development kit (SDK), enabling any app makers to create 
+            applications for the platform.2 The overwhelming popularity of the iPhone was 
+            certainly driven by the effectiveness of iOS. Nearly 218 million iPhones were 
+            sold by the end of 2018, making the device the single most successful product 
+            ever released into the market.3﻿ Some estimates show that since launch in 2007, 
+            iOS has been responsible for more than $1 trillion in revenue for Apple.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="What_you_should_already_know">
+        <header>History</header>
+        <article>
+          <li>In 2005, when Steve Jobs began planning the iPhone, he had a choice to either 
+            "shrink the Mac, which would be an epic feat of engineering, or enlarge the iPod". 
+            Jobs favored the former approach but pitted the Macintosh and iPod teams, led by 
+            Scott Forstall and Tony Fadell, respectively, against each other in an internal 
+            competition, with Forstall winning by creating the iPhone OS. The decision enabled 
+            the success of the iPhone as a platform for third-party developers: using a well-known 
+            desktop operating system as its basis allowed the many third-party Mac developers 
+            to write software for the iPhone with minimal retraining. Forstall was also responsible 
+            for creating a software development kit for programmers to build iPhone apps, as well 
+            as an App Store within iTunes.</li>
+
+          <li>The operating system was unveiled with the iPhone at the Macworld Conference & Expo 
+            on January 9, 2007, and released in June of that year. At the time of its 
+            unveiling in January, Steve Jobs claimed: "iPhone runs OS X" and runs "desktop class 
+            applications", but at the time of the iPhone's release, the operating system 
+            was renamed "iPhone OS". Initially, third-party native applications were not supported. 
+            Jobs' reasoning was that developers could build web applications through the Safari web 
+            browser that "would behave like native apps on the iPhone". In October 2007, 
+            Apple announced that a native Software Development Kit (SDK) was under development and 
+            that they planned to put it "in developers' hands in February". On March 6, 
+            2008, Apple held a press event, announcing the iPhone SDK.</li>
+            
+          <li>iPhone (first generation), the first commercially released device running iOS (2007)
+            The iOS App Store was opened on July 10, 2008 with an initial 500 applications available.
+             This quickly grew to 3,000 in September 2008, 15,000 in January 2009, 50,000 in 
+             June 2009, 100,000 in November 2009, 250,000 in August 2010, 650,000 
+             in July 2012, 1 million in October 2013, 2 million in June 2016, 
+             and 2.2 million in January 2017. As of March 2016, 1 million apps are natively 
+             compatible with the iPad tablet computer. These apps have collectively been downloaded 
+             more than 130 billion times. App intelligence firm Sensor Tower has estimated that 
+             the App Store will reach 5 million apps by the year 2020.</li>
+            
+            <li>In September 2007, Apple announced the iPod Touch, a redesigned iPod based on the 
+              iPhone form factor. On January 27, 2010, Apple introduced their much-anticipated 
+              media tablet, the iPad, featuring a larger screen than the iPhone and iPod Touch, and 
+              designed for web browsing, media consumption, and reading, and offering multi-touch 
+              interaction with multimedia formats including newspapers, e-books, photos, videos, music, 
+              word processing documents, video games, and most existing iPhone apps using a 9.7-inch 
+              screen. It also includes a mobile version of Safari for web browsing, as 
+              well as access to the App Store, iTunes Library, iBookstore, Contacts, and Notes. 
+              Content is downloadable via Wi-Fi and optional 3G service or synced through the user's 
+              computer. AT&T was initially the sole U.S. provider of 3G wireless access for the iPad.</li>
+            
+            <li>In June 2010, Apple rebranded iPhone OS as "iOS". The trademark "IOS" had been used by 
+              Cisco for over a decade for its operating system, IOS, used on its routers. To avoid any 
+              potential lawsuit, Apple licensed the "IOS" trademark from Cisco.</li>
+            
+            <li>The Apple Watch smartwatch was announced by Tim Cook on September 9, 2014, being 
+            introduced as a product with health and fitness-tracking. It was released on 
+            April 24, 2015. It uses watchOS as operative system, which is based on IOS:</li>
+            
+            <li>In October 2016, Apple opened its first iOS Developer Academy in Naples inside University 
+            of Naples Federico II's new campus. The course is completely free, aimed at acquiring 
+            specific technical skills on the creation and management of applications for the Apple 
+            ecosystem platforms. At the Academy there are also issues of business administration 
+            (business planning and business management with a focus on digital opportunities) and 
+            there is a path dedicated to the design of graphical interfaces. Students have the opportunity 
+            to participate in the "Enterprise Track", an in-depth training experience on the entire life 
+            cycle of an app, from design to implementation, to security, troubleshooting, data storage 
+            and cloud usage. As of 2020, the Academy graduated almost a thousand students from 
+            all over the world, who have worked on 400 app ideas and have already published about 50 apps 
+            on the iOS App Store. In the 2018/2019 academic year, students from more than 30 different 
+            countries arrived. 35 of these have been selected to attend the Worldwide Developer Conference, 
+            the annual Apple Developer Conference held annually in California in early June.</li>
+            
+            <li>Steve Jobs, Apple's then CEO, introducing the iPad.
+            On June 3, 2019, iPadOS, the branded version of iOS for iPad, was announced at the 2019 WWDC; 
+            it was launched on September 25, 2019.</li>
+        </article>
+      </section>
+      <section class="main-section" id="JavaScript_and_Java">
+        <header>Development</header>
+        <article>
+          <p>The iOS SDK (Software Development Kit) allows for the development of mobile apps on iOS.</p>
+          <p>While originally developing iPhone prior to its unveiling in 2007, Apple's then-CEO Steve 
+            Jobs did not intend to let third-party developers build native apps for iOS, instead directing 
+            them to make web applications for the Safari web browser. However, backlash from developers 
+            prompted the company to reconsider, with Jobs announcing in October 2007 that Apple would 
+            have a software development kit available for developers by February 2008. The SDK 
+            was released on March 6, 2008.</p>
+          <p>The SDK is a free download for users of Mac personal computers. It is not available 
+            for Microsoft Windows PCs. The SDK contains sets giving developers access to various 
+            functions and services of iOS devices, such as hardware and software attributes.   It 
+            also contains an iPhone simulator to mimic the look and feel of the device on the computer 
+            while developing. New versions of the SDK accompany new versions of iOS. In 
+            order to test applications, get technical support, and distribute apps through App Store, 
+            developers are required to subscribe to the Apple Developer Program.</p>
+          <p>Combined with Xcode, the iOS SDK helps developers write iOS apps using officially 
+            supported programming languages, including Swift and Objective-C. Other 
+            companies have also created tools that allow for the development of native iOS 
+            apps using their respective programming languages.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Hello_world">
+        <header>Application</header>
+        <article>
+          <p>You can find the current version of iOS on your iPhone in the "General" section of your phone's 
+          Settings app. Tap "Software Update" to see your current iOS version and to check if there are any 
+          new system updates waiting to be installed. You can also find the iOS version on the "About" 
+          page in the "General" section.</p>
+          <p>iOS is used on the iPad, iPhone, iPod Touch, iPod Nano, and Apple TV. There is an on going trend 
+            to merge iOS with Mac OS X. In the Apple store over a million Apps are available for the iPhone, 
+            and over five hundred thousand Apps are optimized for the iPad.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Hardware</header>
+        <p>The main hardware platform for iOS is the ARM architecture (the ARMv7, ARMv8-A, ARMv8.2-A, ARMv8.3-A). 
+          iOS releases before iOS 7 can only be run on iOS devices with 32-bit ARM processors (ARMv6 and ARMv7-A 
+          architectures). In 2013, iOS 7 was released with full 64-bit support (which includes a native 64-bit 
+          kernel, libraries, drivers as well as all built-in applications), after Apple announced that they 
+          were switching to 64-bit ARMv8-A processors with the introduction of the Apple A7 chip. 64-bit 
+          support was also enforced for all apps in the App Store; All new apps submitted to the App Store with 
+          a deadline of February 2015, and all app updates submitted to the App Store with a deadline of June 1, 
+          2015. iOS 11 drops support for all iOS devices with 32-bit ARM processors as well as 32-bit 
+          applications, making iOS 64-bit only.</p>
+      </section>
+      <section class="main-section" id="Declaring_variables">
+        <header>Devices</header>
+        <article>
+          <img src="devices.png" style="max-height: 100%; max-width: 100%;">
+        </article>
+      </section>
+      <section class="main-section" id="Variable_scope">
+        <header>Reception</header>
+        <article>
+          <h2><b>Market share</b></h2>
+          <p>iOS is the second most popular mobile operating system in the world, 
+            after Android. Sales of iPads in recent years are also behind Android, 
+            while, by web use (a proxy for all use), iPads (using iOS) are still the 
+            most popular.</p>
+
+          <p>By the middle of 2012, there were 410 million devices activated.
+            At WWDC 2014, Tim Cook said 800 million devices had been sold by June 2014.</p>
+          
+          <p>During Apple's quarterly earnings call in January 2015, the company 
+            announced that they had sold over one billion iOS devices since 2007.</p>
+          
+          <p>By late 2011, iOS accounted for 60% of the market share for smartphones and 
+            tablets. By the end of 2014, iOS accounted for 14.8% of the smartphone market 
+            and 27.6% of the tablet and two-in-one market. In February 2015, StatCounter 
+            reported iOS was used on 23.18% of smartphones and 66.25% of tablets worldwide, 
+            measured by internet usage instead of sales.</p>
+          
+          <p>In the third quarter of 2015, research from Strategy Analytics showed that 
+            iOS adoption of the worldwide smartphone market was at a record low 12.1%, 
+            attributed to lackluster performance in China and Africa. Android accounted 
+            for 87.5% of the market, with Windows Phone and BlackBerry accounting for the 
+            rest.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Global_variables">
+        <header>Features</header>
+        <article>
+          <h3>Here are some of the most famous features of iOS</h3>
+          <ul>
+            <li><b>Battery usage indicator</b> - allows user to track battery percentage.</li>
+            <li><b>iCloud Photo Library</b> - allows user to view photos uploaded in iCloud.</li>
+            <li><b>Family Sharing</b> - allows multiple users to share access to multiple apple service.</li>
+            <li><b>Interactive Notifications</b> - provides user options in a notification such as replying to a message without opening the messaging app.</li>
+            <li><b>Messages upgrade</b> - provides more flexibility in messaging.</li>
+            <li><b>Widgets</b> - provides more beauty to the home screen.</li>
+            <li><b>Lock screen app suggestions</b> - provides more security on apps.</li>
+            <li><b>TouchID for apps</b> - allows user to a fingerprint password to install and secure apps.</li>
+            <li><b>iCloud Drive</b> - an online storage for file uploads.</li>
+            <li><b>Health Monitoring</b> - gives user the ability to monitor his/her health.</li>
+            <li><b>Contacts on apps screen</b> - shortcut feature to specific contacts.</li>
+            <li><b>More Spotlight results</b> - a shortcut tab that provides information on apps as well.</li>
+            <li><b>Weather</b> - gives user ability to monitor the weather.</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Constants">
+        <header>Security and Privacy</header>
+        <article>
+          <p>iOS utilizes many security features in both hardware and software. Below are summaries of the 
+            most prominent features.</p>
+
+          </h3></b>Secure Boot</h2></b>
+          <p>Before fully booting into iOS, there is low-level code that runs from the Boot ROM. Its task is to 
+          verify that the Low-Level Bootloader is signed by the Apple Root CA public key before running it. 
+          This process is to ensure that no malicious or otherwise unauthorized software can be run on an iOS 
+          device. After the Low-Level Bootloader finishes its tasks, it runs the higher level bootloader, known 
+          as iBoot. If all goes well, iBoot will then proceed to load the iOS kernel as well as the rest of 
+          the operating system.</p>
+
+          </h3></b>Secure Enclave</h3></b>
+          <p>The Secure Enclave is a coprocessor found in iOS devices part of the A7 and newer chips used for 
+          data protection, Touch ID and Face ID. The purpose of the Secure Enclave is to handle keys and other 
+          info such as biometrics that is sensitive enough to not be handled by the Application Processor (AP). 
+          It is isolated with a hardware filter so the AP cannot access it. It shares RAM with the AP, but its 
+          portion of the RAM (known as TZ0) is encrypted. The secure enclave itself is a flashable 4MB AKF processor 
+          core called the secure enclave processor (SEP) as documented in Apple Patent Application 20130308838. 
+          The technology used is similar to ARM's TrustZone/SecurCore but contains proprietary code for Apple KF 
+          cores in general and SEP specifically. It is also responsible for generating the UID key on A9 or newer 
+          chips that protects user data at rest.</p>
+          <p>It has its own secure boot process to ensure that it is completely secure. A hardware random number 
+          generator is also included as a part of this coprocessor. Each device's Secure Enclave has a unique ID 
+          that is given to it when it is made and cannot be changed. This identifier is used to create a temporary 
+          key that encrypts the memory in this portion of the system. The Secure Enclave also contains an anti-replay 
+          counter to prevent brute force attacks.</p>
+          <p>The SEP is located in the devicetree under IODeviceTree:/arm-io/sep and managed by the AppleSEPManager driver.</p>
+
+          <h3><b>Face ID</h3></b>
+          <p>Face ID is a face scanner that is embedded in the notch on iPhone models X, XS, XS Max, XR, 11, 11 Pro, 
+          11 Pro Max, 12, 12 Mini, 12 Pro, and 12 Pro Max. It can be used to unlock the device, make purchases, and 
+          log into applications among other functions. When used, Face ID only temporarily stores the face data in 
+          encrypted memory in the Secure Enclave, as described below. There is no way for the device's main processor 
+          or any other part of the system to access the raw data that is obtained from the Face ID sensor.</p>
+
+          <h3></b>Passcode</h3></b>
+          <p>OS devices can have a passcode that is used to unlock the device, make changes to system settings, and encrypt 
+          the device's contents. Until recently, these were typically four numerical digits long. However, since unlocking 
+          the devices with a fingerprint by using Touch ID has become more widespread, six-digit passcodes are now the default 
+          on iOS with the option to switch back to four or use an alphanumeric passcode.[206]</p>
+
+          <h3><b>Touch ID</h3></b>
+          <p>Touch ID is a fingerprint scanner that is embedded in the home button and can be used to unlock the device, 
+          make purchases, and log into applications among other functions. When used, Touch ID only temporarily stores the 
+          fingerprint data in encrypted memory in the Secure Enclave, as described above. There is no way for the device's 
+          main processor or any other part of the system to access the raw fingerprint data that is obtained from the Touch 
+          ID sensor.</p>
+
+          <h3><b>Address Space Layout Randomization</h3></b>
+          <p>Address Space Layout Randomization (ASLR) is a low-level technique of preventing memory corruption attacks 
+          such as buffer overflows. It involves placing data in randomly selected locations in memory in order to make it 
+          more difficult to predict ways to corrupt the system and create exploits. ASLR makes app bugs more likely to 
+          crash the app than to silently overwrite memory, regardless of whether the behavior is accidental or malicious.</p>
+
+          <h3><b>Non-Executable Memory</h3></b>
+          <p>iOS utilizes the ARM architecture's Execute Never (XN) feature. This allows some portions of the memory to be 
+          marked as non-executable, working alongside ASLR to prevent buffer overflow attacks including return-to-libc attacks.</p>
+
+          <h3><b>Encryption</h3></b>
+          <p>As mentioned above, one use of encryption in iOS is in the memory of the Secure Enclave. When a passcode is 
+          utilized on an iOS device, the contents of the device are encrypted. This is done by using a hardware AES 256 
+          implementation that is very efficient because it is placed directly between the flash storage and RAM.</p>
+          <p>iOS, in combination with its specific hardware, uses crypto-shredding when erasing all content and 
+          settings by obliterating all the keys in 'effaceable storage'. This renders all user data on the device 
+          cryptographically inaccessible.</p>
+
+          <h3><b>Keychain</h3></b>
+          <p>The iOS keychain is a database of login information that can be shared across apps written by the same person 
+          or organization. This service is often used for storing passwords for web applications.</p>
+
+          <h3><b>App Security</h3></b>
+          <p>Third-party applications such as those distributed through the App Store must be code signed with an Apple-issued 
+          certificate. In principle, this continues the chain of trust all the way from the Secure Boot process as mentioned above 
+          to the actions of the applications installed on the device by users. Applications are also sandboxed, meaning that they 
+          can only modify the data within their individual home directory unless explicitly given permission to do otherwise. For 
+          example, they cannot access data that is owned by other user-installed applications on the device. There is a very extensive 
+          set of privacy controls contained within iOS with options to control apps' ability to access a wide variety of permissions 
+          such as the camera, contacts, background app refresh, cellular data, and access to other data and services. Most of the code 
+          in iOS, including third-party applications, runs as the "mobile" user which does not have root privileges. This ensures that 
+          system files and other iOS system resources remain hidden and inaccessible to user-installed applications.</p>
+          
+          <h3><b>App Store bypasses</h3></b>
+          <p>Companies can apply to Apple for enterprise developer certificates. These can be used to sign apps such that iOS will 
+          install them directly (sometimes called "sideloading"), without the app needing to be distributed via the App Store. 
+          The terms under which they are granted make clear that they are only to be used for companies who wish to distribute apps 
+          directly to their employees.</p>
+          <p>Circa January–February 2019, it emerged that a number of software developers were misusing enterprise developer certificates 
+          to distribute software directly to non-employees, thereby bypassing the App Store. Facebook was found to be abusing an Apple 
+          enterprise developer certificate to distribute an application to underage users that would give Facebook access to all private 
+          data on their devices. Google was abusing an Apple enterprise developer certificate to distribute an app to adults 
+          to collect data from their devices, including unencrypted data belonging to third parties. TutuApp, Panda Helper, AppValley, 
+          and TweakBox have all been abusing enterprise developer certificates to distribute apps that offer pirated software.</p>
+
+          <h3><b>Network Security</h3></b>
+          <p>iOS supports TLS with both low- and high-level APIs for developers. By default, the App Transport Security framework requires 
+          that servers use at least TLS 1.2. However, developers are free to override this framework and utilize their own methods of 
+          communicating over networks. When Wi-Fi is enabled, iOS uses a randomized MAC address so that devices cannot be tracked by anyone 
+          sniffing wireless traffic.</p>
+
+          <h3><b>Two-Factor Authentication</h3></b>
+          <p>Two-factor authentication is an option in iOS to ensure that even if an unauthorized person knows an Apple ID and password 
+          combination, they cannot gain access to the account. It works by requiring not only the Apple ID and password, but also a verification 
+          code that is sent to an iDevice or mobile phone number that is already known to be trusted. If an unauthorized user attempts to 
+          sign in using another user's Apple ID, the owner of the Apple ID receives a notification that allows them to deny access to the 
+          unrecognized device.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Data_types">
+        <header>Digital rights management</header>
+        <article>
+          <p>The closed and proprietary nature of iOS has garnered criticism, particularly 
+            by digital rights advocates such as the Electronic Frontier Foundation, computer 
+            engineer and activist Brewster Kahle, Internet-law specialist Jonathan Zittrain, 
+            and the Free Software Foundation who protested the iPad's introductory event and 
+            have targeted the iPad with their "Defective by Design" campaign. 
+            Competitor Microsoft, via a PR spokesman, criticized Apple's control over 
+            its platform.</p>
+
+          <p>At issue are restrictions imposed by the design of iOS, namely digital rights 
+          management (DRM) intended to lock purchased media to Apple's platform, the development 
+          model (requiring a yearly subscription to distribute apps developed for the iOS), the 
+          centralized approval process for apps, as well as Apple's general control and lockdown 
+          of the platform itself. Particularly at issue is the ability for Apple to remotely 
+          disable or delete apps at will.</p>
+            
+          <p>Some in the tech community have expressed concern that the locked-down iOS represents 
+          a growing trend in Apple's approach to computing, particularly Apple's shift away from 
+          machines that hobbyists can "tinker with" and note the potential for such restrictions to 
+          stifle software innovation.[203][204] Former Facebook developer Joe Hewitt protested against 
+          Apple's control over its hardware as a "horrible precedent" but praised iOS's sandboxing of apps.</p>
+        </article>
+      </section>
+      <section class="main-section" id="if...else_statement">
+        <header>Facts</header>
+        <article>
+          <ul>
+            <li><b>OS X</b> - iOS actually began life with this name.</li>
+            <li><b>Get your lost phone back.</b> - with the help of the app Find My Phone.</li>
+            <li><b>Excellent software and hardware integration</b> - the main reason why iPhones do not get super slow even after years of use.</li>
+            <li><b>Performance</b> - iOS is generally faster and smoother than most operating systems.</li>
+            <li><b>Ease of use</b> - iOS grants ease of use to the user as it possesses a more simple and minimalist but rich design.</li>
+            <li><b>No bloatware</b> - apple does not fill their devices with unecessary apps.</li>
+            <li><b>Apple Pay</b> - allows a user to pay online with ease and security.</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a
+                href="https://en.wikipedia.org/wiki/IOS#Digital_rights_management"
+                target="_blank"
+                >MDN</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>    
+</body>
+</html>
